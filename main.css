@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.bg {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+
+.wrapp {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  padding: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.goto {
+  width: auto;
+  height: auto;
+  color: #fff;
+  background-color: rgb(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  border-radius: 5px;
+  text-align: center;
+  padding: 3em;
+
+}
+.gobtn {
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em;
+  font-weight: bold;
+  font-size: 1.5em;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: rgb(54, 123, 213);
+  border-bottom: 2px solid rgb(45, 89, 147);
+}
+
+.gobtn:hover {
+  border: 0px solid rgb(45, 89, 147);
+}
+
+.welcome {
+  color: #191a1b;
+  margin: 2em 0 0 0;
+  text-align: justify;
+  font-size: 1em;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .gobtn {
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .gobtn {
+    padding: 1em;
+    font-weight: bold;
+    font-size: 2em;
+  }
+  .welcome {
+  margin: 2.5em 0 0 0;
+  font-size: 1.3em;
+}
